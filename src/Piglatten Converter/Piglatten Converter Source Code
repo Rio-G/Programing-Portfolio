@@ -1,1 +1,24 @@
-
+print ("\033[1;35;10m")
+print('Welcome to a Pig Latin Translator. Please type a word or phrase to translate. Please do not use punctuation.')
+translate = True
+while (translate):
+  eng = input('English:')
+  if ('' in eng):
+    splitspace = eng.split(' ', len(eng))
+    i = 0
+    words = []
+    for index in range(len(splitspace)):
+      splittwo = splitspace[i].split(splitspace[i][0], len(splitspace))
+      firstvtwo = splitspace[i][0]
+      suff = 'ay'
+      pigword = splittwo[1] + firstvtwo + suff
+      words.append(pigword)
+      i = i + 1
+    s = ' '
+    a = s.join(words)
+    print('Pig Lattin:', a)
+  else:
+    firstv = eng[0]
+    suff = 'ay'
+    split = eng.split(eng[0], 1)[1]
+    print('Pig Latin:', split + firstv + suff)
