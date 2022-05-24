@@ -1,1 +1,22 @@
-
+play = True
+while (play):
+  print ("\033[1;34;10m")
+  print ("Welcome to the Number Guessing Game! ")
+  import random
+  n = random.randint(1,100)
+  guess = 0
+  num = int(input("please guess a number between 1 and 100: "))
+  while(num != n):
+    if n < num:
+      print('You guessed:',num,', Sorry that is too high!')
+      guess+= 1
+      num = int(input("Please try again: "))
+    elif num < n:
+      print('You guessed:',num,'.Sorry that is too low!')
+      guess+= 1
+      num = int(input("Please try again: "))
+  guess+= 1
+  print ('You guessed:',num,'That is correct!')
+  print ('This attempt took you', guess,'tries.')
+  if input('Play again?:') == 'no':
+    play = False
