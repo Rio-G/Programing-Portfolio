@@ -18,6 +18,14 @@ A calculater used to solve math probloms, made in Processing fall 2021-2022.
 
 Source code for project [here](https://github.com/Rio-G/ProgramingPortfolio/tree/gh-pages/src/Calculater).
 
+#### Snake Game
+
+This is a duplicit of the google game snake.
+
+![Screen Shot 2022-05-25 at 1 05 14 PM](https://user-images.githubusercontent.com/102073178/170348434-d50d08fd-4f77-4dfb-be99-03a107de099c.png)
+
+Source code for project [here](https://github.com/Rio-G/Programing-Portfolio/blob/gh-pages/src/Snake%20game/Snake%20Game%20Code)
+
 ## Processing Python Projects
 
 ### Shadow bolt
